@@ -4,6 +4,10 @@ A local Streamlit web app for browsing the latest Argo synthetic-profile index a
 
 This is an unofficial helper tool. Data are downloaded from the Argo GDAC index and DAC file tree.
 
+## Screenshot
+
+![Argo Sprof Download Manager interface](argoSprof.png)
+
 ## Features
 
 - Refresh the latest `argo_synthetic-profile_index.txt` from Argo GDAC
@@ -41,6 +45,7 @@ argo-sprof-manager/
   environment.yml
   pyproject.toml
   requirements.txt
+  argoSprof.png
   README.md
   scripts/
     live_network_check.py
