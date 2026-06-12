@@ -3,6 +3,7 @@ name: Package Smoke Check
 on:
   push:
   pull_request:
+  workflow_dispatch:
 
 jobs:
   smoke:
