@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it and acknowledge Argo data according to official Argo guidance."
+title: "Argo Sprof Download Manager"
+version: "1.0.0"
+type: software
+authors:
+  - name: "Argo Sprof Manager Contributors"
+repository-code: "https://github.com/cq20180725/argo-sprof-manager"
+license: "MIT"
+keywords:
+  - Argo
+  - Sprof
+  - oceanography
+  - Streamlit
+  - NetCDF
+references:
+  - type: data
+    title: "Argo float data and metadata from Global Data Assembly Centre (Argo GDAC)"
+    authors:
+      - name: "Argo"
+    year: 2000
+    doi: "10.17882/42182"
+    url: "https://doi.org/10.17882/42182"

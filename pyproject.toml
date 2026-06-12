@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "argo-sprof-manager"
+version = "1.0.0"
+description = "A Streamlit web app for browsing and downloading Argo Sprof files."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+    { name = "Argo Sprof Manager Contributors" }
+]
+keywords = ["argo", "sprof", "oceanography", "streamlit", "netcdf"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Scientific/Engineering :: Atmospheric Science",
+]
+dependencies = [
+    "streamlit>=1.58",
+    "pandas>=2.0",
+    "certifi",
+]
+
+[project.optional-dependencies]
+preview = [
+    "xarray",
+    "netCDF4",
+]
+test = [
+    "pytest",
+]
+
+[project.scripts]
+argo-sprof-manager = "argo_sprof_manager.cli:main"
+argo-sprof-web = "argo_sprof_manager.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/cq20180725/argo-sprof-manager"
+Repository = "https://github.com/cq20180725/argo-sprof-manager"
+Issues = "https://github.com/cq20180725/argo-sprof-manager/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+argo_sprof_manager = ["*.py"]
